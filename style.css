@@ -1,0 +1,253 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+/*container: div.header, div.nav_bar, div.nav_menu, div.intro, div.bottom_content, div.footer*/
+.container {
+    width: 970px;
+    min-height: 700px;
+    background-color: rgb(36, 80, 118);
+    margin: 0px auto;
+}
+
+/*header: img, div.search_menu*/
+div.container div.header {
+    height: 70px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*header image*/
+div.container div.header img {
+    height: 80px;
+}
+
+/*search_menu: p (span, a, a), div.search_box*/
+div.container div.header div.search_menu {
+    width: 300px;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*search_menu text*/
+div.container div.header div.search_menu span {
+    color: white;
+}
+
+/*search_menu anchors*/
+div.container div.header div.search_menu a {
+    color: rgb(216, 216, 10);
+}
+
+/*search_menu search_box: input, button*/
+div.container div.header div.search_menu div.search_box {
+    width: 200px;
+    overflow: hidden;
+    background-color: rgb(68, 68, 68);
+    padding: 5px 30px;
+    border: 6px solid rgb(68, 68, 68);
+    border-radius: 25px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 6px;
+}
+
+/*search_box input*/
+div.container div.header div.search_menu div.search_box input[type=text] {
+    width: 140px;
+    text-align: center;
+    padding: 5px;
+    color: grey;
+    font-size: 15px;
+}
+
+/*search_box button*/
+div.container div.header div.search_menu div.search_box button {
+    width: 35px;
+    background-color: rgb(38, 81, 117);
+    color: white;
+    font-size: 17px;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+    border-top: 2px solid silver;
+    border-left: 2px solid silver;
+}
+
+/*top navigation bar: anchors*/
+div.container div.nav_bar {
+    width: 850px;
+    background-color: rgb(72, 126, 171);
+    padding: 10px;
+    margin-left: 50px;
+    border: 2px solid rgb(72, 126, 171);
+    border-radius: 5px;
+    box-shadow: 3px 3px #05050546;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*top navigation bar anchors*/
+div.container div.nav_bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+/*left side navigation menu: anchors*/
+div.container div.nav_menu {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    list-style-position: inside;
+    margin-top: 20px;
+    margin-right: 60px;
+    font-size: 13px;
+}
+
+/*left side navigation menu list*/
+div.container div.nav_menu ul {
+    list-style: none;
+    margin-left: 100px;
+    display: inline-block;
+    list-style-position: inside;
+}
+
+/*left side navigation menu list*/
+div.container div.nav_menu ul li {
+    padding: 4px;
+}
+
+/*left side navigation menu list*/
+div.container div.nav_menu li:before {
+    content: "»"; 
+    padding-right: 5px;
+    color: yellow;
+    font-size: 15px;
+}
+
+/*left side navigation menu list anchors*/
+div.container div.nav_menu ul a {
+    color:white;
+}
+
+/*intro text area: p, h4, h5*/
+div.container div.intro {
+    width: 600px;
+    height: 255px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+
+/*intro area paragraph*/
+div.container div.intro p {
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+/*intro text area quote*/
+div.container div.intro h4 {
+    color: rgb(216, 216, 10);
+    text-align: center;
+    font-style: italic;
+    padding: 7px;
+}
+
+/*intro text area quote*/
+div.container div.intro h5 {
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
+
+/*div.bottom_content: div.left_content, div.right_content*/
+div.container div.bottom_content {
+    width: 930px;
+    height: 190px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*bottom area left content*/
+div.container div.bottom_content div.left_content {
+    width: 330px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 3px solid rgb(117, 168, 211);
+}
+
+/*bottom area right content*/
+div.container div.bottom_content div.right_content{
+    width: 330px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 3px solid rgb(117, 168, 211);
+}
+
+/*bottom area paragraphs*/
+div.container div.bottom_content p {
+    text-align: center;
+    font-size: 13px;
+}
+
+/*bottom area span*/
+div.container div.bottom_content span {
+    color: rgb(117, 168, 211);
+    font-size: 13px;
+}
+
+/*bottom area unordered lists*/
+div.container div.bottom_content ul{
+    list-style: none;
+    width: 245px;
+}
+
+div.container div.bottom_content li {
+    list-style-type: square;
+    padding-right: 5px;
+}
+
+/*div.footer: h5, h6*/
+div.container div.footer {
+    height: 70px;
+    background-image: linear-gradient(180deg, rgb(38, 81, 117), rgb(47, 101, 145));
+    color: rgb(120, 170, 213);
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*footer h5 text*/
+div.container div.footer h5 {
+    width: 200px;
+    font-family: 'Times New Roman';
+    text-align: center;
+}
+
+/*footer h6 text*/
+div.container div.footer h6 {
+    width: 970px;
+    text-align: center;
+    padding: 8px;
+}
+
